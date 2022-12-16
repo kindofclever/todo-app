@@ -1,7 +1,7 @@
 <section
   (dblclick)="onToggle(task)"
   [ngClass]="{ reminder: task.reminder }"
-  class="task px-12 md:px-[33rem] py-1 m-4 hover:bg-[#0c2a3e] hover:text-[#f7f6f3] rounded-lg hover:cursor-pointer duration-200 border-2 border-[#0c2a3e]"
+  class="task px-12 md:px-[33rem] py-3 m-4 hover:bg-[#0c2a3e] hover:text-[#f7f6f3] rounded-lg hover:cursor-pointer duration-200 border-4 border-[#0c2a3e]"
 >
   <p class="text-lg md:text-2xl lg:text-3xl">{{ task.text }}</p>
   <p class="text-md md:text-lg lg:text-xl">When: {{ task.day }}</p>

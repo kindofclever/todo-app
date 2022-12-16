@@ -1,7 +1,10 @@
+<app-task-form></app-task-form>
 <div
-  class="h-auto w-full mt-5 md:mt-20 rounded-md bg-gradient-to-r from-[#0c2a3e] via-[#0b7085] to-[#b24f51] p-1"
+  class="h-auto w-full mt-5 md:mt-20 rounded-lg bg-gradient-to-r from-[#0c2a3e] via-[#0b7085] to-[#b24f51] p-1"
 >
-  <div class="h-full w-full flex justify-center items-center bg-[#f7f6f3]">
+  <div
+    class="h-full w-full flex justify-center rounded-lg items-center bg-[#f7f6f3]"
+  >
     <div class="py-5">
       <app-task-item
         *ngFor="let task of tasks"
