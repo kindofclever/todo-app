@@ -1,0 +1,13 @@
+<header
+  class="flex flex-col justify-center items-center text-center md:text-right md:items-start"
+>
+  <div class="flex justify-between items-center w-full mb-3 md:mb-5">
+    <h1 class="select-none text-4xl md:text-5xl lg:text-7xl">{{ title }}</h1>
+    <app-button
+      (buttonClicked)="(consoleLog)"
+      text="Add task"
+      color="#0c2a3e"
+    ></app-button>
+  </div>
+  <h2 class="select-none text-2xl md:text-3xl lg:text-5xl">{{ subtitle }}</h2>
+</header>
