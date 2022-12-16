@@ -3,7 +3,12 @@
 >
   <div class="h-full w-full flex justify-center items-center bg-[#f7f6f3]">
     <div class="py-5">
-      <app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
+      <app-task-item
+        *ngFor="let task of tasks"
+        [task]="task"
+        (onDeleteTask)="deleteTask(task)"
+        (onToggleReminder)="toggleReminder(task)"
+      ></app-task-item>
     </div>
   </div>
 </div>
